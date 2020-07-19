@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Music</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="fondo">
+        <header>
+            <div class="separador">
+                <h1>¿Listo para tocar la Bateria Virtual?</h1>
+                <p></p>
+            </div>
+        </header>
+
+
+        <div class="contenedor">
+
+            <div class="costados-arriba">
+                <div class="platillos-r pro key" id="r" data-key="82">
+                    <p>Platillo: R</p>
+                    <audio data-key="82" src="/sonidos/platillos-q-r.mp3"></audio>
+                </div>
+                <div class="platillos-q pro key" id="q" data-key="81">
+                    <p>Platillo: Q</p>
+                    <audio data-key="81" src="/sonidos/platillos-q-r.mp3"></audio>
+                </div>
+            </div>
+
+
+
+
+            <div class="cont-medio">
+                <div class="platillos-2 pro key" id="f" data-key="70">
+                    <p>Platillo: F</p>
+                    <audio data-key="70" src="/sonidos/platillos_2.mp3"></audio>
+                </div>
+                <div class="tomb-e pro key" id="e" data-key="69">
+                    <p>Tomb: E</p>
+                    <audio data-key="69" src="/sonidos/tombs-w-e.mp3"></audio>
+                </div>
+                <div class="tomb-w pro key" id="w" data-key="87">
+                    <p>Tomb: W</p>
+                    <audio data-key="87" src="/sonidos/tombs-w-e.mp3"></audio>
+                </div>
+                <div class="hit-hat pro key" id="z" data-key="90">
+                    <p>Hit Hat: Z</p>
+                    <audio data-key="90" src="/sonidos/hit-hat-z.mp3"></audio>
+                </div>
+            </div>
+            <div class="cont-abajo">
+                <div class="tambor-8 pro key" id="a" data-key="65">
+                    <p>Caja: A</p>
+
+                    <audio data-key="65" src="/sonidos/tambores_8.mp3"></audio>
+
+                </div>
+
+                <div class="bombo pro key" id="s" data-key="83">
+                    <p>Bombo: S</p>
+                    <audio data-key="83" src="/sonidos/bombo-s.mp3"></audio>
+                </div>
+                <div class="tomb-piso pro key" id="d" data-key="68">
+                    <p>Tomb: D</p>
+                    <audio data-key="68" src="/sonidos/tomb-piso-d.mp3"></audio>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="script.js"></script>
+    </div>
+    <footer>
+        <div class="site-footer">
+            <div class="informacion">
+                <input class="info" value="¿Quieres saber cómo empezar?" type="submit" onclick="alert('Si estas utilizando una computadora presiona las teclas del teclado, si estas usando movil presiona en el cuadrado blanco debajo para acceder a tu teclado y empezar a usar la Bateria')">
+            </div>
+            <div class="teclado">
+                <div id="listo">
+                    <p>Presiona el contenedor de abajo y coloque las letras indicadas para cada pieza</p>
+                    <div class="texto">
+                        <input type="text" id="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>
